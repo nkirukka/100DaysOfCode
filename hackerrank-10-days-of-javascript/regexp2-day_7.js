@@ -11,3 +11,5 @@
     
     return re;
 }
+let s = 726553
+console.log(s.toLocaleString("en-US"))
