@@ -29,6 +29,7 @@ div button {
   border: none;
   border-radius: 10px;
   padding: 10px 50px;
+  cursor:pointer;
   margin: auto;
   font-weight: lighter;
   font-size: large;
