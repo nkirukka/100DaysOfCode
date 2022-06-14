@@ -1,0 +1,33 @@
+.btn {
+    height: 64px;
+    width: 300px;
+    border-radius: 32px;
+    border: none;
+    font-size: 21px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.btn::before{
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+    z-index: -1;
+    background: #0adf8a;
+    transition: 1s;
+}
+.btn:is(:hover, :focus)::before{
+    width: 100%;
+}
+.btn:hover{
+    color: rgb(95, 51, 68);
+}
+.fa-arrow-right{
+    transform: translateX(200%);
+}
