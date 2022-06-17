@@ -1,75 +1,67 @@
 body {
-    margin: 0; 
-    height: 100%; 
     overflow: hidden;
-    box-sizing: border-box;
     background-color: rgb(237, 237, 237);
 }
-
 .container{
-    margin: 10px;
-}
-#topSection{
-    position: relative;
-    left: 39em;
-    margin-bottom: 30px;
-    border-top: 5px solid red;
-}
-#bottomSection {
-    position: relative;
-    top: -1em;
-    right: -39.2em;
-    border-top: 5px solid yellow;
-    margin-bottom: 50px;
-}
-#leftSection{
-    position: relative;
-    bottom: 30rem;
-    left: 11rem;
-    border-top: 5px solid rgb(100, 218, 254);
-}
-#rightSection {
-    position: relative;
-    bottom: 48rem;
-    left: 67rem;
-    border-top: 5px solid blue;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -57%);
+display: flex;
 }
 .all-four{
-    width: 350px;
+    width: 300px;
     height: 250px;
-    border-radius: 5px;
+    border-radius: 40px;
     box-shadow: 10px 19px 39px -15px rgba(0,0,0,0.7);
     padding: 10px 15px 0px;
     background-color: white;
 }
+.all-four:nth-of-type(1){
+    border-top: 5px solid red;
+    transform: translate(150%, -10%);
+}
+.all-four:nth-of-type(2){
+    border-top: 5px solid yellow;
+    margin-bottom: 50px;
+    transform: translate(50%, 100%);
+}
+.all-four:nth-of-type(3){
+    border-top: 5px solid rgb(100, 218, 254);
+    transform: translate(-160%, 50%);
+}
+.all-four:nth-of-type(4){
+    border-top: 5px solid blue;
+    transform: translate(-40%, 50%);
+}
 .all-four .description {
     color: rgb(152, 145, 145);
 }
-.all-four h3 {
+.all-four .title, .header .light {
     font-size: 22px;
     margin-bottom: 0px;
+}
+.all-four .icon{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 15em;
+    top: 2em;
 }
 .header {
     text-align: center;
     margin-bottom: 30px;
 }
-.header h1{
+.header .light{
     font-weight: lighter;
     padding-top: 8px;
-    margin-bottom: 0px;
 }
-.header h2{
+.header .bold{
     font-size: 35px;
     margin: 0px 0px;
 }
-.header .first-desc{
+.header .header-description{
     color: rgb(152, 145, 145);
 }
 
-.all-four img{
-    width: 90px;
-    height: 90px;
-    position: relative;
-    left: 15em;
-    top: 2em;
-}
+
